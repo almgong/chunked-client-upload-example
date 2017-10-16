@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="row one column">
+          <div class="column center aligned">
+            <div id="upload-form-container">
+              <h1>Select a file to upload!</h1>
+              <form id="upload-form" class="ui form">
+                <div class="ui left input">
+                  <input type="file" />
+                </div>
+                <button class="ui button" type="submit">Upload</button>
+              </form>
+
+              <br/>
+
+              <div id="loader" class="ui active centered inline loader text">Uploading...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="/javascripts/build/site.bundle.js"></script>
+  </body>
+</html>
